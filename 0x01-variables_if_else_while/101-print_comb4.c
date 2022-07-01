@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
  *main - Entry point
  *Return: Always 0 (Success)
@@ -8,25 +6,28 @@
 int main(void)
 
 {
-	int m;
-	int n;
+	int c, i, k;
 
-	for (m = 48; m <= 57; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-	for (n = 48; n <= 57; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-	if (n > m)
+	for (k = '0'; k <= '9'; k++)
 	{
-		putchar(m);
-		putchar(n);
-	if (m != 56 || n != 57)
+	if (c < i && i < k)
+	{
+		putchar(c);
+		putchar(i);
+		putchar(k);
+	if (c != '7')
 	{
 		putchar(',');
-		putchar(32);
+		putchar(' ');
 	}
 	}
 	}
 	}
-		putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
