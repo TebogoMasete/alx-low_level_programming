@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- *main - Entry point
+ *main - Prints 3 combination of numbers
  *Return: Always 0 (Success)
  */
 int main(void)
