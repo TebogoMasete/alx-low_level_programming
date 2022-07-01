@@ -1,24 +1,25 @@
 #include <stdio.h>
 
 /**
- *main - entry block
- *@void: no argument
- *Return: 0
+ *main - Entry point
+ *Return: 0 (Success)
  **/
 
 int main(void)
 
 {
 
-	char c;
+	char lower_case;
+	char upper_case;
 
-	char C;
-
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-	for (C = 'A'; C <= 'Z'; C++)
-		putchar(C);
-		putchar('\n');
+	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	{
+		putchar(lower_case);
+	}
+	for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+	{
+		putchar(upper_case);
+	}
+		putchar ('\n');
 	return (0);
-
 }
