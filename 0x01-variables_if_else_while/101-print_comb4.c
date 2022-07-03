@@ -1,4 +1,5 @@
 #include <stdlib.h>
+
 /**
  *main - Prints 3 combination of numbers
  *Return: Always 0 (Success)
