@@ -1,33 +1,41 @@
-#include <stdlib.h>
-
+#include <stdiob.h>
+#include <time.h>
+#include <stdio.h>
 /**
- *main - Prints 3 combination of numbers
+ *main - prints all Possible different combinations of 3 digits.
  *Return: Always 0 (Success)
  */
 int main(void)
 
 {
-	int c, i, k;
+	int digit1, digit2, digit3;
 
-	for (c = '0'; c <= '9'; c++)
+	for (digit1 = 48, digit2 = 49, digit3 = 50;)
 	{
-	for (i = '0'; i <= '9'; i++)
+	while  ((digit1 < 56) && (digit2 < 57) && (digit3 < 58))
 	{
-	for (k = '0'; k <= '9'; k++)
+		putchar(1);
+		putchar(2);
+		putchar(3);
+	if ((digit1 == 55) && (digit2 == 56) && (digit3 == 57))
 	{
-	if (c < i && i < k)
+		putchar('\n');
+		digit1++;
+		digit2++;
+		digit3++;
 	{
-		putchar(c);
-		putchar(i);
-		putchar(k);
-	if (c != '7')
-	{
-		putchar(',');
-		putchar(' ');
+	else
+	}	putchar(44);
+		putchar(32);
+	if (digit3 < 57)
+		digit3++;
 	}
+	else if ((digit2 < 56) && (digit3 == 57))
+		digit3 = 1 + ++digit2;
 	}
-	}
-	}
+	else
+		digit2 = 1 + ++digit1;
+		digit3 = 1 + digit2;
 	}
 	putchar('\n');
 	return (0);
