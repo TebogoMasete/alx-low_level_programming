@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - Print all combinations of two digits
  * Return: Always 0 (success)
@@ -9,7 +9,7 @@ int main(void)
 
 	for (digit1 = 0; digit1 <= 98; digit1++)
 	{
-	for (digit2 = 0; digit2 + 1; digit2 <= 99; digit2++)
+	for (digit2 = digit1 + 1; digit2 <= 99; digit2++)
 	{
 		putchar((digit1 / 10) + '0');
 		putchar((digit1 % 10) + '0');
@@ -23,7 +23,7 @@ int main(void)
 	}
 	}
 	}
-	putchar(32);
+	putchar(10);
 	return (0);
 
 }
